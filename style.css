@@ -1,0 +1,265 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Header styling */
+ul
+{
+    list-style-type: none;
+}
+ul li
+{
+    display: inline-block;
+    cursor: pointer;
+}
+header
+{
+    height: 7rem;
+}
+header .heading
+{
+    padding-left: 20px; 
+    height: 65%;
+    background: rgb(116, 211, 255);
+    display: grid;
+    grid-template-columns: 1.5fr 0.5fr;
+}
+header .heading .leftside
+{
+    display: flex;
+    align-items: center;
+}
+header .heading .leftside a
+{
+    text-decoration: none;
+    font-size: 2.5em;
+    color: black;
+    letter-spacing: 5px;
+    margin-right: 18px;
+}
+header .heading .leftside input[type=text]
+{
+    border: none;
+    outline: none;
+    width: 50%;
+    padding: 5px 15px;
+    font-size: 12px;
+    background: rgb(197, 229, 248);
+    border-radius: 50px;
+    margin-right: 10px;
+}
+header .heading .leftside input[type=submit]
+{
+    background: black;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    padding: 5px 15px;
+    color: #ffffff;
+    cursor: pointer;
+}
+header .heading .rightside
+{
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 15px;
+}
+header .heading .rightside p
+{
+    font-weight: 300;
+    font-size: 1.2em;
+}
+header .heading .rightside ul li
+{
+    padding: 1px;
+    font-size: 0.8em;
+}
+header .heading .rightside ul li:hover
+{
+    color: #ffffff;
+}
+header navbar
+{
+    display: grid;
+    grid-template-columns: 4fr 2fr;
+    background: rgb(240, 240, 240);
+}
+header navbar .lists ul li
+{
+    padding: 10px 20px;
+}
+.frndrqst
+{
+    color: rgb(78, 78, 78);
+}
+header navbar .lists ul li:hover
+{
+    color: rgb(49, 49, 49);
+    background: #ffffff;
+}
+
+header navbar .infobar
+{
+    padding: 10px;
+    font-size: 0.8em;
+}
+header navbar .infobar ul li
+{
+    float: right;
+    margin-right: 35px;
+}
+
+/* Entries styling */
+.body-content
+{
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+.body-content .content
+{
+    margin: 0 15px;
+}
+.body-content .searches
+{
+    width: 25%;
+    background: rgb(240, 240, 240);
+}
+.body-content .searches .recentsearches .topic
+{
+    background: rgb(90, 160, 250);
+    width: 100%;
+    padding: 15px 10px;
+}
+.body-content .searches .recentsearches .topic:hover
+{
+    background: rgb(90, 160, 250);
+}
+.body-content .searches .recentsearches li
+{
+    width: 100%;
+    padding: 15px 10px;
+}
+.body-content .searches .recentsearches li:hover
+{
+    background-color: #ffffff;
+}
+.body-content .entries
+{
+    width: 65%;
+}
+.body-content .entries .entriesContainer
+{
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    border-radius: 30px 30px 0px 0px;
+}
+
+.body-content .entries .entriesContainer .entrynav
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 5px;
+    border-bottom: 2px solid  rgb(90, 160, 250);
+}
+.body-content .entries .entriesContainer .entrynav .grid
+{
+    position: relative;
+    height: 6rem;
+    background:  rgb(240, 240, 240);
+}
+.body-content .entries .entriesContainer .entrynav .grid .boxes
+{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.body-content .entries .entriesContainer .entrynav .grid .boxes .box
+{
+    padding: 10px 5px;
+    width: 40%;
+    border-radius: 20px 20px 0 0;
+    background: rgb(206, 202, 202);
+    text-align: center;
+    cursor :pointer;
+}
+.body-content .entries .entriesContainer .entrynav .grid .boxes .box.active
+{
+    background: rgb(90, 160, 250);
+}
+.body-content .entries .entriesContainer .entrynav .grid h5
+{
+    margin: 10px 0;
+    text-align: center;
+}
+.body-content .entries .entriesContainer .entrycontent .items
+{
+    border-bottom: 2px solid grey;
+}
+.body-content .entries .entriesContainer .entrycontent .items .item
+{
+    display: flex;
+    padding: 15px 0;
+}
+.body-content .entries .entriesContainer .entrycontent .items img
+{
+    height: 5rem;
+    width: 5rem;
+    border-radius: 20px;
+    margin-right: 10px;
+}
+.body-content .tutorials 
+{
+    width: 20%;
+    background: rgb(240, 240, 240);
+}
+.body-content .tutorials .recentsearches .topic
+{
+    background: rgb(90, 160, 250);
+    width: 100%;
+    padding: 15px 10px;
+}
+.body-content .tutorials .recentsearches .topic:hover
+{
+    background: rgb(90, 160, 250);
+}
+.body-content .tutorials .recentsearches li
+{
+    width: 100%;
+    padding: 15px 10px;
+}
+.body-content .tutorials .recentsearches li:hover
+{
+    background: #ffffff;
+}
+footer
+{
+    font-size: 0.8em;
+    font-weight: bolder;
+    color: #ffffff;
+
+    background: grey;
+}
+footer ul li
+{
+    padding: 20px 15px;
+}
+footer ul .right
+{
+    float: right;
+}
+footer ul .right:hover
+{
+    color: white;
+}
+footer ul li:hover
+{
+    color: black;
+}
